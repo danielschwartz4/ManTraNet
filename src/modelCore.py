@@ -17,7 +17,9 @@ from keras import backend as K
 from keras.layers.convolutional import _Conv
 from keras.legacy import interfaces
 from keras.engine import InputSpec
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np 
 
 #################################################################################
