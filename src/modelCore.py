@@ -6,7 +6,10 @@ Created on Thu Nov 29 18:07:45 2018
 @author: yue_wu
 """
 import os
-import tensorflow as tf
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ["SM_FRAMEWORK"] = "tf.keras"
+from tensorflow import keras
 from keras.layers import Layer, Input, GlobalAveragePooling2D, Lambda, Dense
 from tf.keras.layers import ConvLSTM2D, Conv2D, AveragePooling2D, BatchNormalization
 from tf.keras.constraints import unit_norm, non_neg
