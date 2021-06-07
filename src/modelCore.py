@@ -6,20 +6,22 @@ Created on Thu Nov 29 18:07:45 2018
 @author: yue_wu
 """
 import os
+import tensorflow as tf
 from keras.layers import Layer, Input, GlobalAveragePooling2D, Lambda, Dense
-from keras.layers import ConvLSTM2D, Conv2D, AveragePooling2D, BatchNormalization
-from keras.constraints import unit_norm, non_neg
-from keras.activations import softmax
-from keras.models import Model
-from keras.initializers import Constant
-from keras.constraints import Constraint
-from keras import backend as K
-from keras.layers.convolutional import _Conv
-from keras.legacy import interfaces
-from keras.engine import InputSpec
+from tf.keras.layers import ConvLSTM2D, Conv2D, AveragePooling2D, BatchNormalization
+from tf.keras.constraints import unit_norm, non_neg
+from tf.keras.activations import softmax
+# from keras.models import Model
+from tensorflow.python.keras.models import Model
+from tf.keras.initializers import Constant
+from tf.keras.constraints import Constraint
+from tf.keras import backend as K
+from tf.keras.layers.convolutional import _Conv
+from tf.keras.legacy import interfaces
+from tf.keras.engine import InputSpec
 # import tensorflow as tf
-import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
+# import tensorflow.compat.v1 as tf
+# tf.disable_v2_behavior()
 import numpy as np 
 
 #################################################################################
